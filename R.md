@@ -26,9 +26,12 @@ In a dataframe a variable is a category, and observations are all the values und
 *which.max (DataFrame$variable)* - find the max observation inside the specified variable
 
 
-## General
+## Functions
 
 *getwd ()* - get current directory location
+*match ("SearchTerm", DataFrame$Variable)* - finds what we're looking for
+*na.rm = TRUE* - removes the NA values
+*as.numeric (item)* - converts TRUE/FALSE to numbers
 
 ## I/O
 
@@ -46,6 +49,17 @@ In a dataframe a variable is a category, and observations are all the values und
 			*xlab = ""* - x axis name
 			*ylab = ""* - y axis name
 			*main = ""* - plot title
+			*breaks =* - number of break points
+			*xlim =* -the limits of x axis (you put a vector to define this) 
 *table (DataFrame$variable)* - creates a table for each observation and corresponding value
 *tapply (DataFrame$variable, DataFrame $variable, method)* - creates a custom table where the second argument tells us what to group the information by
+
+## Date 
+
+*DateConvert = as.Date(strptime(mvt$Date, "%m/%d/%y %H:%M"))* - converts to date
+# Tips & Tricks
+
+*DataFrame$Answer [which.min (DataFrame $Seeker)]* 
+
+[https://www.stat.berkeley.edu/~s133/saving.html]
 
